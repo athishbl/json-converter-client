@@ -1,0 +1,114 @@
+/* App.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #333;
+}
+
+.app-main {
+  padding: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.json-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.convert-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.convert-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.convert-button:hover {
+  background-color: #0056b3;
+}
+
+.download-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.download-link {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #28a745;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .button-container {
+      flex-wrap: wrap;
+  }
+  
+  .convert-button {
+      margin: 10px 0;
+  }
+}
